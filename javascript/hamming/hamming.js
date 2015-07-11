@@ -4,11 +4,9 @@ function compute(t1, t2) {
 	}
 	var dist = 0;
 	if (t1 != t2) { // identical strings have 0 distance
-		var t1chars = t1.split("");
-		var t2chars = t2.split("");
-		var tlen = t1chars.length;
+		var tlen = t1.length;
 		for (var i=0; i<tlen; i++) {
-			if (t1chars[i] != t2chars[i]) {
+			if (t1[i] != t2[i]) {
 				dist++;
 			}
 		}
